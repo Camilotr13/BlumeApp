@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Pascual</title>
+    <link rel="stylesheet" href="../static/css/register.css">
+</head>
+<body>
+
+<div class="login-container"> 
+    <div class="login-content">
+        <div class="login-title"> 
+            <img src="../static/img/LogoPascual.png" alt="Logo">
+            <h2>Crear cuenta</h2>
+        </div>
+
+        <div class="register-role-select">
+            <label for="role-select">Selecciona tu rol:</label>
+            <select id="role-select" name="role">
+                <option value="">Seleccionar...</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="profesor">Profesor</option>
+                <option value="empresa">Empresa</option>
+                <option value="administrador">administrador</option>
+            </select>
+        </div>
+        
+        <div class="register-info">
+            <p>Selecciona tu rol para continuar con el registro.</p>
+        </div>
+        
+        <a href="../templates/login.html" class="login-link">¿Ya tienes una cuenta? Iniciar sesión</a>
+        <a href="#" class="login-link">¿Necesitas ayuda?</a>
+    </div>
+</div>
+
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        
+        <form id="estudiante-form" class="register-form" style="display: none;">
+            <h3>Registro de Estudiante</h3>
+            <div class="form-control">
+                <input type="text" id="nombre-estudiante" name="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email-estudiante" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password-estudiante" name="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="register-button">Registrarme como Estudiante</button>
+        </form>
+
+        <form id="profesor-form" class="register-form" style="display: none;">
+            <h3>Registro de Profesor</h3>
+            <div class="form-control">
+                <input type="text" id="nombre-profesor" name="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-control">
+                <select id="area-profesor" name="area" required>
+                    <option value="">Selecciona una facultad</option>
+                    <option value="ingenieria">Facultad de Ingeniería</option>
+                    <option value="produccion-diseno">Facultad de Producción y Diseño</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email-profesor" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password-profesor" name="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="register-button">Registrarme como Profesor</button>
+        </form>
+        
+        <form id="empresa-form" class="register-form" style="display: none;">
+            <h3>Registro de Empresa</h3>
+            <div class="form-control">
+                <input type="text" id="nombre-empresa" name="nombre_empresa" placeholder="Nombre de la empresa" required>
+            </div>
+            <div class="form-control">
+                <input type="text" id="nit-empresa" name="nit" placeholder="NIT o Identificación" required>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email-empresa" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password-empresa" name="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="register-button">Registrar Empresa</button>
+        </form>
+
+        <form id="administrador-form" class="register-form" style="display: none;">
+            <h3>Registro de administradoristrador</h3>
+            <div class="form-control">
+                <input type="text" id="nombre-administrador" name="nombre" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email-administrador" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password-administrador" name="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="register-button">Registrar administrador</button>
+        </form>
+        
+    </div>
+</div>
+
+<script src="../static/js/register.js"></script>
+</body>
+</html>
