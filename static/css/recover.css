@@ -1,6 +1,4 @@
-/* ------------------------------------- */
 /* Estilos para centrar el módulo en la página */
-/* ------------------------------------- */
 
 body {
     background-image: url(../img/FondoRecuperarContraseña.jpg); 
@@ -15,9 +13,7 @@ body {
     margin: 0;
 }
 
-/* ------------------------------------- */
 /* Estilos del contenedor principal */
-/* ------------------------------------- */
 
 .login-container {
     display: flex;

@@ -1,6 +1,4 @@
-/* ------------------------------------- */
 /* Estilos generales de la página */
-/* ------------------------------------- */
 
 body {
     background-image: url(../img/FondoRegistro.jpg); 
@@ -15,9 +13,7 @@ body {
     margin: 0;
 }
 
-/* ------------------------------------- */
 /* Estilos del contenedor principal del login */
-/* ------------------------------------- */
 
 .login-container {
     display: flex;
@@ -67,7 +63,7 @@ body {
 }
 /* Estilo para el texto "Selecciona tu rol:" */
 .register-role-select label {
-    font-size: 1.2em; /* Puedes ajustar este valor a tu gusto */
+    font-size: 1.2em; 
 }
 
 .register-info p {
@@ -90,13 +86,10 @@ body {
     text-decoration: underline;
 }
 
-/* ------------------------------------- */
-/* Estilos del modal de registro */
-/* ------------------------------------- */
 
 /* Estilos del modal de registro */
 .modal {
-    display: none; /* Ahora el modal está oculto por defecto */
+    display: none; 
     position: fixed;
     z-index: 100;
     left: 0;
