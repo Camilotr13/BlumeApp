@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pascual</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+
+<div class="login-container"> 
+  <div class="login-content">
+    <div class="login-title">    
+      <img src="../static/img/LogoPascual.png" alt="">
+        <h2>Ingresar</h2>
+    </div>
+
+    <form class="login-form">
+      <div class="form-control">
+     
+        <div class="input-with-icon">
+          <input type="email" id="email" name="email" required placeholder="Tu nombre de usuario o correo">
+        </div>
+      </div>
+
+      <div class="form-control">
+        
+        <div class="input-with-icon">
+          <input type="password" id="password" name="password" required required placeholder="Tu contraseña">
+        </div>
+      </div>
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember" value="true">
+        <label for="remember">Recordarme</label>
+      </div>
+
+      <button type="submit" class="login-button">Ingresar</button>
+    </form>
+    
+    <a href="../templates/register.html" class="login-link">Registrarse</a>
+    <a href="../templates/recover.html" class="login-link">¿Olvidó la contraseña?</a>
+  </div>
+</div>
+
+</body>
+</html>
